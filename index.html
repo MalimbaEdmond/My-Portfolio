@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/c1f11fd9ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="myPictures/firstlogo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp-duotone fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+    
+            <div class="header-text">
+                <p>JUNIOR SOFTWARE <br> DEVELOPER</p>
+                <h1>I'm <span> Malimba </span> <br>Edmond From Ghana</h1>
+            </div>
+        </div>
+    </div>
+    
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm a highly motivated junior software developer eager to kickstart my career in web development and Mobile App Development. I've built a strong foundation in core programming concepts, such as, algorithms, and object-oriented programming.
+                    During my studies at university, I gained practical experience through relevant coursework. I'm particularly interested in Html, Css React and Node.js.
+                    I'm a quick learner, eager to collaborate with experienced developers, and passionate about creating innovative software solutions. I'm confident that my enthusiasm, combined with my foundational skills, will make me a valuable asset to your team.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('interest')">Hobbies</p>
+                    <p class="tab-links" onclick="opentab('languages')">Prog.Languages</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Core programming concepts</span><br>I have a strong understanding of algorithms, and object-oriented programming.</li>
+                        <li><span>Web development</span><br>A focus on using technologies like React and Node.js to create web applications.</li>
+                        <li><span>Mobile app development</span><br>I am hoping to gain skills in Flutter and Dart in my current course at Power Learn Project for cross platform Mobile App development</li>
+                        <li><span>Passion</span><br>I have genuine enthusiasm for software development and creating innovative solutions.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Attachement (Atebubu Municipal Assambly)</span><br>Assistance in Administrative work</li>
+                        <li><span>Attachement (Atebubu Municipal Hospital)</span><br>Assiting the Network Administrator</li>
+                        <li><span>Internship Program (Atedes J H S)</span><br>Teaching</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2024</span><br>Akenten Appiah Menka University of Skills Training and Entreprenurial Development (AAMUSTED)</li>
+                        <li><span>2017-2020</span><br>Northen School Of Business Senior High School</li>
+                        <li><span>2017-2017</span><br>Royal Computers and Training Institute</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="interest">
+                    <ul>
+                        <li>Listening to Musics</li>
+                        <li>Learning</li>
+                        <li>Sports</li>
+                        <li>Design</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="languages">
+                    <ul>
+                        <li>C C++</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <img src="myPictures/about.image.png" >
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Freelance Software Development</h2>
+            <p>Designing, developing, and maintaining custom software solutions tailored to client needs.</p>
+            <a href="#">Learn More</a>
+           </div> 
+           <div>
+            <i class="fa-sharp fa-solid fa-file-word"></i>
+            <h2>Technical Writing and Documentation</h2>
+            <p>Creating clear and concise documentation for software products, hardware devices, and other technical topics.</p>
+            <a href="#">Learn More</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-truck-medical"></i>
+            <h2>IT Support and Troubleshooting</h2>
+            <p>Providing expert assistance with computer problems, network issues, and software installations.</p>
+            <a href="#">Learn More</a>
+           </div> 
+        </div>
+    </div>
+   </div>
+    
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="myPictures/work-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Cloned Youtube</h3>
+                    <p>I developed a comprehensive front-end clone of YouTube using html and Css, which showcases my proficiency in HTML, and CSS.</p>
+                    <a href="https://malimbaedmond.github.io/practice-project/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myPictures/work-2.jpg" alt="">
+                <div class="layer">
+                    <h3>Upcoming Project</h3>
+                    <p>Developed a user-friendly telemedicine platform to connect patients with healthcare providers remotely. Leveraged modern technologies to ensure secure and efficient consultations. Demonstrates strong skills in web development, user experience design, and healthcare-specific requirements.</p>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myPictures/work-3.jpg" alt="">
+                <div class="layer">
+                    <h3>Upcoming Project</h3>
+                    <p>Created a robust expense tracking application that helps users manage their finances effectively. Incorporated features like budgeting, categorization, and data visualization to provide valuable insights. Demonstrates proficiency in software development, user interface design, and financial management principles.
+
+                    </p>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> malimbaedmond40@gmail.com</p>
+                <p> <i class="fa-solid fa-phone-volume"></i> 0546841283</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/me/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/flamesjunior40/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/edmond-malimba-84455622b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="myPictures/CV.jpg" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/66d94ec694959ea359b055487a683281" method="POST">
+                    <input type="text" name="Name" placeholder="Your Full Name" required>
+                    <input type="email" name="Email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="10" placeholder="Type your Messag Here!" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made and Use by Malimba Edmond only &copy;</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabnane){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabnane).classList.add("active-tab");
+    }
+</script>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+
+
+</body>
+</html>
